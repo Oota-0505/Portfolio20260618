@@ -217,7 +217,7 @@ const workList = [
   { id: 'work11.html', title: 'メディパ様（美容医療）<br>サービス全般制作', desc: 'Googleのビジネスコンテストで優勝したチームのサービス', img: './images/medipatop.jpg', link: './work11.html' },
   { id: 'work9.html', title: '串かつ さじろう様<br>リニューアル', desc: '全6ページをフルスタック〜CMS化まで実装', img: './images/kushikatsu-sajiro.jpg', link: './work9.html' },
   { id: 'work16.html', title: 'カタログ制作<br>業務効率化ツール', desc: 'Python × AI画像認識で、花のカタログ画像とExcelの差分確認を自動化', img: './images/catalog-automation-hero.jpg', link: './work16.html' },
-  { id: 'work15.html', title: 'LP制作<br>1ヶ月8本ペース', desc: 'デザインからログイン・DB・決済導線まで対応。ビジネスLPを高速制作', img: './images/lp-note-hero.jpg', link: './work15.html' },
+  { id: 'work15.html', title: 'LP制作<br>1ヶ月8件ペース', desc: 'デザインからログイン・DB・決済導線まで対応。ビジネスLPを高速制作', img: './images/lp-note-hero.jpg', link: './work15.html' },
   { id: 'work13.html', title: '書籍横断検索アプリ', desc: '岐阜の図書館・書店を一括検索。マイページ導線も改善', img: './images/IMG_2566.jpeg', link: './work13.html' },
   { id: 'work10.html', title: 'VEIN ENERGY様<br>コーポレート', desc: 'ロゴ制作から実装まで2日で納品', img: './images/vein-energy.jpg', link: './work10.html' },
   { id: 'work12.html', title: '五料産業株式会社様<br>リニューアル', desc: 'ヒアリングからデザイン・実装まで一貫して担当', img: './images/goryo-top.jpg', link: './work12.html' },

@@ -8,15 +8,15 @@
   --color-cool-gray: #E2E8F0;
   --color-warm-gray: #718096;
   --color-charcoal: #2D3748;
-  
+
   /* グリーンアクセント */
   --color-primary-green: #38A169;
   --color-dark-green: #2F855A;
-  
+
   /* フォントファミリー */
   --font-primary: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   --font-english: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
+
   /* フォントサイズ */
   --text-4xl: 2.25rem; /* 36px */
   --text-3xl: 1.875rem; /* 30px */
@@ -25,7 +25,7 @@
   --text-lg: 1.125rem; /* 18px */
   --text-base: 1rem; /* 16px */
   --text-sm: 0.875rem; /* 14px */
-  
+
   /* スペーシング */
   --space-1: 0.25rem; /* 4px */
   --space-2: 0.5rem; /* 8px */
@@ -35,7 +35,7 @@
   --space-12: 3rem; /* 48px */
   --space-16: 4rem; /* 64px */
   --space-20: 5rem; /* 80px */
-  
+
   /* その他 */
   --border-radius: 12px;
   --border-radius-sm: 8px;
@@ -436,10 +436,12 @@ button:hover {
 
 .section-subtitle {
   font-size: var(--text-lg);
-  color: var(--color-warm-gray);
-  max-width: 600px;
+  color: #4b5563;
+  max-width: 720px;
   margin: 0 auto;
   line-height: 1.8;
+  font-weight: 700;
+  letter-spacing: 0.01em;
   position: relative;
   z-index: 2;
 }
@@ -1265,9 +1267,10 @@ body {
 }
 
 .section-title {
-  font-size: var(--text-3xl);
-  font-weight: 800;
-  letter-spacing: 0;
+  font-size: clamp(2.2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.16;
 }
 
 .section-title::after {
@@ -1279,10 +1282,12 @@ body {
 }
 
 .section-subtitle {
-  max-width: 720px;
-  color: #667085;
-  font-size: 1rem;
-  line-height: 1.75;
+  max-width: 760px;
+  color: #4b5563;
+  font-size: clamp(1.02rem, 1.2vw, 1.12rem);
+  line-height: 1.8;
+  font-weight: 600;
+  letter-spacing: 0.015em;
 }
 
 .marquee-text {
@@ -1466,7 +1471,7 @@ body {
     min-height: 58px;
     padding: 6px 16px; /* 上下のパディングを小さく */
   }
-  
+
   .brand-logo {
     height: 50px;
     width: auto;
@@ -1476,14 +1481,14 @@ body {
     margin-left: auto;
     margin-right: 8px;
   }
-  
+
   .header-contact-icon {
     width: 40px;
     height: 40px;
     flex-basis: 40px;
     font-size: 0.66rem;
   }
-  
+
   .header-contact-icon img {
     width: 25px;
     height: 25px;
@@ -1504,7 +1509,7 @@ body {
     width: 24px;
     height: 24px;
   }
-  
+
   /* メニューオーバーレイ（ヘッダーの下から暗転させる） */
   .nav-overlay {
     display: none;
@@ -1518,12 +1523,12 @@ body {
     opacity: 0;
     transition: opacity 0.3s ease;
   }
-  
+
   .nav-overlay.active {
     display: block;
     opacity: 1;
   }
-  
+
   .nav-list {
     display: none;
   }
@@ -1545,7 +1550,7 @@ body {
     animation: slideDown 0.3s ease;
     margin: 0;
   }
-  
+
   @keyframes slideDown {
     from {
       opacity: 0;
@@ -1556,7 +1561,7 @@ body {
       transform: translateY(0);
     }
   }
-  
+
   .nav-list.active .nav-item {
     padding: 0.5em 1em;
     transition: background-color 0.2s ease;
@@ -1565,21 +1570,21 @@ body {
   .nav-list.active .nav-item:last-child {
     margin-left: 0;
   }
-  
+
   .nav-list.active .nav-item:hover {
     background-color: rgba(56, 161, 105, 0.1);
   }
-  
+
   .nav-list.active .nav-link {
     color: var(--color-charcoal);
     font-weight: 500;
   }
-  
+
   .nav-list.active .nav-link.active {
     color: var(--color-primary-green);
     font-weight: 700;
   }
-  
+
   .nav-toggle {
     display: flex;
   }
@@ -1589,54 +1594,54 @@ body {
   .container {
     padding: 0 var(--space-4);
   }
-  
+
   .nav-container {
     display: flex;
     padding: 8px 16px; /* 上下のパディングを小さく */
   }
-  
+
   .brand-logo {
     height: 48px;
     width: auto;
   }
-  
+
   .nav-list {
     display: none;
   }
-  
+
   .nav-toggle {
     display: flex;
   }
-  
+
   .section-header {
     padding: var(--space-8) 0; /* レスポンシブ時はパディングを小さく */
   }
-  
+
   /* マーキーテキストの位置を調整（VALUEセクションと揃える） */
   /* VALUEセクションはpadding-top: 0なので、他のセクションもそれに合わせる */
   .section-header .marquee-bg {
     top: 40%; /* VALUEセクションの位置に合わせてさらに上に */
   }
-  
+
   .section-title {
     margin-bottom: var(--space-2); /* マージンを小さく */
   }
-  
+
   .section-subtitle {
     margin-top: var(--space-2); /* サブタイトルのマージンを調整 */
     line-height: 1.6; /* 行間を調整 */
     display: block; /* ブロック要素として確実に表示 */
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
-  
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .works-grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);
@@ -1645,11 +1650,11 @@ body {
   .timeline {
     padding-left: var(--space-6);
   }
-  
+
   .timeline-item::before {
     left: -35.5px;
   }
-  
+
   /* Pricing responsive styles */
   .pricing-groups {
     margin: var(--space-12) var(--space-4) 0;
@@ -1658,25 +1663,25 @@ body {
   .pricing-group-title {
     font-size: var(--text-lg);
   }
-  
+
   .pricing-item {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-2);
     padding: var(--space-4) var(--space-6);
   }
-  
+
   .pricing-service {
     font-size: var(--text-base);
   }
-  
+
   .pricing-cost {
     font-size: var(--text-lg);
     text-align: left;
     min-width: auto;
     white-space: normal;
   }
-  
+
 }
 
 @media (max-width: 480px) {
@@ -1691,7 +1696,7 @@ body {
     min-height: 50px;
     padding: 5px 12px; /* さらに小さく */
   }
-  
+
   .brand-logo {
     height: 42px;
     width: auto;
@@ -1729,35 +1734,35 @@ body {
     width: 21px;
     height: 21px;
   }
-  
+
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .section-header {
     padding: var(--space-6) 0; /* さらに小さく */
   }
-  
+
   /* マーキーテキストの位置を調整（VALUEセクションと揃える） */
   .section-header .marquee-bg {
     top: 38%; /* VALUEセクションの位置に合わせてさらに上に */
   }
-  
+
   .section-title {
-    font-size: var(--text-3xl);
+    font-size: clamp(2rem, 9vw, 2.6rem);
     margin-bottom: var(--space-2); /* レスポンシブ時はマージンを小さく */
   }
-  
+
   .section-subtitle {
     margin-top: var(--space-2); /* サブタイトルのマージンを調整 */
     line-height: 1.6; /* 行間を調整 */
     display: block; /* ブロック要素として確実に表示 */
   }
-  
+
   .work-content {
     padding: var(--space-4);
   }
-  
+
 }
 
 /* ===== アニメーション ===== */
@@ -2357,17 +2362,17 @@ body {
     height: 350px;
     border-radius: 16px;
   }
-  
+
   .parallax-title-left,
   .parallax-title-right {
     font-size: clamp(2rem, 12vw, 4rem);
   }
-  
+
   .parallax-subtitle-left,
   .parallax-subtitle-right {
     font-size: 1.8rem;
   }
-  
+
   .content-section {
     padding: 4rem 1.5rem;
   }
@@ -2404,17 +2409,17 @@ body {
   .parallax-hero-section .strength-description {
     font-size: 0.9rem;
   }
-  
+
   .parallax-hero-section .content-text {
     font-size: 1.1rem;
   }
-  
+
   .parallax-hero-section .hero-actions {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
   }
-  
+
   .parallax-hero-section .hero-actions .btn {
     width: 200px;
   }
@@ -2425,11 +2430,11 @@ body {
     width: 220px;
     height: 320px;
   }
-  
+
   .subtitle-container {
     margin-top: 2rem;
   }
-  
+
   .content-section {
     padding: 3rem 1rem;
   }
@@ -2604,7 +2609,7 @@ body {
   .hero-content-wrapper {
     flex-direction: column-reverse; /* 画像を上に持ってくる場合 */
   }
-  
+
   /* 画像を上に配置するためのオーダー変更 */
   .hero-image-area {
     order: -1; /* 画像を先に表示 */
@@ -2623,7 +2628,7 @@ body {
     width: 260px;
     height: 260px;
   }
-  
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -2633,7 +2638,7 @@ body {
   .hero-title {
     font-size: 2rem;
   }
-  
+
   .hero-img-wrapper {
     width: 220px;
     height: 220px;
@@ -2685,7 +2690,7 @@ body {
   opacity: 0;
   transform: scale(0.8) translateZ(-80px);
   animation: pulse 4s ease-in-out infinite;
-  transition: 
+  transition:
     opacity 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s,
     transform 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s;
 }
@@ -3005,11 +3010,11 @@ body {
     text-align: center;
     gap: 3rem;
   }
-  
+
   .content-section .hero-content-wrapper {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
-  
+
   .content-section .hero-image-area {
     order: -1;
     width: min(100%, calc(100vw - 32px));
@@ -3085,7 +3090,7 @@ div.hero-description p {
   opacity: 0;
   transform: translateY(80px) translateZ(-50px) scale(0.92);
   filter: blur(5px);
-  transition: 
+  transition:
     opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
     transform 1.4s cubic-bezier(0.16, 1, 0.3, 1),
     filter 1.4s cubic-bezier(0.16, 1, 0.3, 1);
@@ -3102,7 +3107,7 @@ div.hero-description p {
   opacity: 0;
   transform: translateY(60px) scale(0.96);
   filter: blur(4px);
-  transition: 
+  transition:
     opacity 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s,
     transform 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s,
     filter 1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s;
@@ -3119,7 +3124,7 @@ div.hero-description p {
   opacity: 0;
   transform: translateY(-30px) scale(0.98);
   filter: blur(2px);
-  transition: 
+  transition:
     opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
     transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
     filter 0.9s cubic-bezier(0.16, 1, 0.3, 1);
@@ -3143,17 +3148,17 @@ div.hero-description p {
     transform: translateY(40px) scale(0.95);
     filter: blur(3px);
   }
-  
+
   .parallax-slide-right {
     transform: translateY(30px) scale(0.97);
     filter: blur(2px);
   }
-  
+
   .parallax-fade-down {
     transform: translateY(-20px) scale(0.99);
     filter: blur(1px);
   }
-  
+
   .parallax-slide-left.visible,
   .parallax-slide-right.visible,
   .parallax-fade-down.visible {
