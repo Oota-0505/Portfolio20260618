@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Notification Hub（個人開発） | 太田三一斗 Portfolio</title>
+    <meta name="description" content="Gmail・Chatwork・GitHub・Slackの通知を1画面に集約し、Notionカレンダーとフォトライブラリーを並べた、自分専用の仕事ホーム画面。Node.jsで作ったローカル実行型ダッシュボードの個人開発実績です。">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNMP1BCECG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WNMP1BCECG');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="icon" href="images/icons8-calla-lily-64 (1).png" type="image/png">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="./images/headerlogo.png" alt="Mihto Oota" class="brand-logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#works" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#voice" class="nav-link">Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#personal" class="nav-link active">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+            <div class="header-contact-actions" aria-label="連絡先">
+                <button type="button" class="header-contact-icon header-chatwork copy-target" data-copy="1oneyidsbboz0" aria-label="Chatwork IDをコピー">
+                    <img src="images/chatwork-header-icon.png" alt="" class="chatwork-logo-img">
+                    <span class="copy-hint">Copied!</span>
+                </button>
+                <a href="mailto:claudemonet0505@gmail.com" class="header-contact-icon" aria-label="メールで連絡">
+                    <img src="images/gmail.svg" alt="" class="mail-icon-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- メインコンテンツ -->
+    <main class="work-detail">
+        <!-- プロジェクトヘッダー -->
+        <section class="work-hero">
+            <div class="container">
+                <div class="work-hero-content">
+                    <span style="display:inline-block;margin-bottom:14px;font-family:'Inter',sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:0.08em;color:#fff;background:#1f8a5b;border-radius:999px;padding:5px 14px;">個人開発 ・ 実装済み</span>
+                    <h1 class="work-title">Work Notification Hub</h1>
+                    <p class="work-subtitle">Gmail・Chatwork・GitHub・Slackの通知を1画面に集約。Notionカレンダーとフォトライブラリーを並べた、外部ディスプレイに常時表示する「自分専用の仕事ホーム画面」。</p>
+                    <div class="work-meta">
+                        <div class="work-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">各種API</span>
+                            <span class="tag">AppleScript</span>
+                            <span class="tag">ローカル実行</span>
+                            <span class="tag">個人開発</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト画像 -->
+        <section class="work-image-section">
+            <div class="container">
+                <div class="work-image-container">
+                    <img src="./images/work-home-dashboard.png" alt="Work Notification Hub のホーム画面。左に通知パネルとフォトライブラリー、右にNotionカレンダー" class="work-main-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト詳細 -->
+        <section class="work-content">
+            <div class="container">
+                <div class="work-content-grid">
+                    <!-- メインコンテンツ -->
+                    <div class="work-main-content">
+                        <div class="content-section">
+                            <h2 class="content-title">概要</h2>
+                            <p class="content-text">
+                                自分の仕事用ホーム画面を作るために開発した、ローカル実行型のデスクトップダッシュボードです。
+                                右側にNotionカレンダー、左上に仕事通知、左下に写真・動画のフォトライブラリーを配置し、外部ディスプレイに常時表示して使うことを想定しています。
+                            </p>
+                            <p class="content-text">
+                                単なる通知アプリではなく、仕事中に常に見ておきたい情報と、少し気分が上がる要素を1つの画面にまとめた「自分専用の仕事ホーム画面」です。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">背景・課題</h2>
+                            <ul class="content-list">
+                                <li>確認すべき情報が Gmail / Chatwork / GitHub / Slack / Notionカレンダー に分散していた</li>
+                                <li>それぞれを個別に開く必要があり、通知の見落としや確認漏れが起きやすかった</li>
+                                <li>Gmailは全部ではなく「特定の相手からのメールだけ」見逃したくないという要件があった</li>
+                                <li>Mac標準ウィジェットの写真はデスクトップ背面に出るため、通知やカレンダーと並べて常時表示しづらかった</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">アプリの概要</h2>
+                            <p class="content-text">
+                                「通知管理パネル」「Notionカレンダー表示」「写真・動画フォトライブラリー」の3つを組み合わせた仕事用ダッシュボードです。
+                                メインは通知管理パネルで、確認すべきものがある時だけ内容を表示。通知がない時はアイコンだけのミニマル表示にして、常時表示していても邪魔にならないUIにしています。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">通知管理機能</h2>
+                            <ul class="content-list">
+                                <li><strong>Gmail:</strong> Gmail APIで「指定した送信者からの未読メールだけ」を取得。見逃したくない相手だけを登録する設計。別アカウント宛もフィルタ転送で拾える。</li>
+                                <li><strong>Chatwork:</strong> Chatwork APIで未読・自分宛て通知を取得。未読数だけでなく、可能な範囲で送信者名と本文の一部も表示。</li>
+                                <li><strong>GitHub:</strong> GitHub Notifications APIでレビュー依頼・コメントを取得。PRレビューやコメントの見落としを減らす。</li>
+                                <li><strong>Slack:</strong> Bot追加やAPI連携を避け、Chromeで開いているSlackタブの未読表示をローカルで監視。相手側に影響を出さない方式。</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">Photo Library</h2>
+                            <p class="content-text">
+                                左下には写真・動画をランダム表示するフォトライブラリーを配置。指定フォルダ内の写真・動画を読み込み、ブラウザ上でスライド表示する小さなフォトフレームを実装しました。
+                                通知がない時間でも画面が無機質にならず、外部ディスプレイに置きっぱなしにしたくなる作業環境を作るための機能です。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">UI設計</h2>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h3 class="tech-category">左上</h3>
+                                    <p class="tech-detail">通知パネル（ある時だけ内容表示）</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">左下</h3>
+                                    <p class="tech-detail">フォトライブラリー</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">右側</h3>
+                                    <p class="tech-detail">Notionカレンダー</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">方針</h3>
+                                    <p class="tech-detail">「今どこを見に行くべきか」を一瞬で判断</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">技術仕様</h2>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Language</h3>
+                                    <p class="tech-detail">Node.js, JavaScript</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Front</h3>
+                                    <p class="tech-detail">HTML / CSS</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">API</h3>
+                                    <p class="tech-detail">Gmail / Chatwork / GitHub</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">その他</h3>
+                                    <p class="tech-detail">Chrome / AppleScript, ローカル実行</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">工夫した点</h2>
+                            <ul class="content-list">
+                                <li>Gmailは特定送信者のみを通知対象にし、別アカウント宛も転送で拾えるようにした</li>
+                                <li>Chatworkは送信者名と本文プレビューを表示するよう改善した</li>
+                                <li>SlackはBot追加せず、Chromeタブ監視で相手側に影響を出さない方式にした</li>
+                                <li>通知がない時は何も表示しないミニマルなUIにした</li>
+                                <li>外部サーバーやDBを使わず、`.env`とローカルの`data/`で完結するローカル実行設計にした</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">このアプリで解決したこと</h2>
+                            <ul class="content-list">
+                                <li>仕事中に複数サービスを何度も開いて確認する手間が減った</li>
+                                <li>通知が来た時だけ対象サービスを見に行けばよくなった</li>
+                                <li>カレンダー・写真も同じ画面に並べ、常時表示したくなる仕事ホーム画面になった</li>
+                                <li>「自分の困りごとを自分で設計して解決できる」ことを示せる個人開発</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- サイドバー -->
+                    <aside class="work-sidebar">
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">プロジェクト情報</h3>
+                            <dl class="project-details">
+                                <dt>種別</dt>
+                                <dd>個人開発（実装済み）</dd>
+
+                                <dt>用途</dt>
+                                <dd>自分専用の仕事ホーム画面</dd>
+
+                                <dt>役割</dt>
+                                <dd>企画・設計・実装すべて</dd>
+
+                                <dt>使用技術</dt>
+                                <dd>Node.js, JavaScript, 各種API, AppleScript</dd>
+
+                                <dt>実行環境</dt>
+                                <dd>ローカル実行（外部サーバー・DBなし）</dd>
+                            </dl>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">今後の改善案</h3>
+                            <p class="sidebar-text">
+                                Slack通知の検知精度向上、Gmail複数アカウントの直接対応、通知の重要度分類、外部ディスプレイ向けの自動配置などを検討中です。
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 戻る -->
+        <section class="related-works">
+            <div class="container">
+                <div class="back-to-works" style="text-align:center;">
+                    <a href="index.html#personal" class="btn btn-primary">個人開発に戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <script src="js/script.js"></script>
+</body>
+</html>

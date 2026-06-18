@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EthioPick（個人開発・開発中） | 太田三一斗 Portfolio</title>
+    <meta name="description" content="エチオピア産コーヒー豆に特化した、レビュー・抽出メモ共有アプリ。Laravel + Inertia + React + Reverb で開発を進めている個人プロダクトの実績です。">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNMP1BCECG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WNMP1BCECG');
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="icon" href="images/icons8-calla-lily-64 (1).png" type="image/png">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="./images/headerlogo.png" alt="Mihto Oota" class="brand-logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#works" class="nav-link">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#voice" class="nav-link">Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#personal" class="nav-link active">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+            <div class="header-contact-actions" aria-label="連絡先">
+                <button type="button" class="header-contact-icon header-chatwork copy-target" data-copy="1oneyidsbboz0" aria-label="Chatwork IDをコピー">
+                    <img src="images/chatwork-header-icon.png" alt="" class="chatwork-logo-img">
+                    <span class="copy-hint">Copied!</span>
+                </button>
+                <a href="mailto:claudemonet0505@gmail.com" class="header-contact-icon" aria-label="メールで連絡">
+                    <img src="images/gmail.svg" alt="" class="mail-icon-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- メインコンテンツ -->
+    <main class="work-detail">
+        <!-- プロジェクトヘッダー -->
+        <section class="work-hero">
+            <div class="container">
+                <div class="work-hero-content">
+                    <span style="display:inline-block;margin-bottom:14px;font-family:'Inter',sans-serif;font-size:0.72rem;font-weight:800;letter-spacing:0.08em;color:#fff;background:#e08a1e;border-radius:999px;padding:5px 14px;">個人開発 ・ 開発中</span>
+                    <h1 class="work-title">EthioPick</h1>
+                    <p class="work-subtitle">エチオピア産コーヒー豆だけに特化した、レビュー・抽出メモ共有アプリ。豆を買ったホームバリスタが「この豆をどう淹れたら一番おいしかったか」を共有する個人プロダクト。</p>
+                    <div class="work-meta">
+                        <div class="work-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Inertia.js</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Reverb</span>
+                            <span class="tag">MariaDB</span>
+                            <span class="tag">個人開発</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト画像 -->
+        <section class="work-image-section">
+            <div class="container">
+                <div class="work-image-container">
+                    <img src="./images/ethiopick-home.png" alt="EthioPick のホーム画面。ショップ一覧と新着レビュー" class="work-main-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト詳細 -->
+        <section class="work-content">
+            <div class="container">
+                <div class="work-content-grid">
+                    <!-- メインコンテンツ -->
+                    <div class="work-main-content">
+                        <div class="content-section">
+                            <h2 class="content-title">概要</h2>
+                            <p class="content-text">
+                                エチオピア産コーヒー豆だけに特化した、レビュー・抽出メモ共有アプリです。
+                                一般的な「コーヒー店レビュー」ではなく、豆を買ったエンドユーザー（ホームバリスタ）が「このエチオピア豆をどう淹れたら一番おいしかったか」を共有することにフォーカスしています。
+                            </p>
+                            <p class="content-text">
+                                YouTube学習で作ったコーヒー店レビューアプリを土台に、エチオピア豆レビュー中心のプロダクトへ育てている個人開発です。日々「React学習＋アプリ改善」を継続し、最終的な公開を目指しています。（※現状の画面は店舗レビューの土台で、豆特化へ移行中）
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">コンセプト・背景</h2>
+                            <ul class="content-list">
+                                <li>対象は、エチオピア産コーヒーが好きな人・ホームバリスタ</li>
+                                <li>豆を買ったあと「よりおいしく淹れる方法」を探している人に向ける</li>
+                                <li>ドリッパー、挽き目、湯温、レシピ、味のメモなどの抽出ノウハウを共有する</li>
+                                <li>「お店の評価」はせず、豆と淹れ方に特化する（ニッチに絞る）</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">主な機能（構想・MVP）</h2>
+                            <ul class="content-list">
+                                <li>エチオピア豆のレビュー投稿（豆名・焙煎所・購入先・精製方法・焙煎度）</li>
+                                <li>総合評価と味のメモ</li>
+                                <li>抽出方法の記録（器具・レシピ・挽き目・湯温など）</li>
+                                <li>口コミの良いエチオピア豆を見つけやすくする</li>
+                                <li>各コーヒー豆ごとに、掲示板的なやり取り（コメント・淹れ方共有）<span style="color:#94a3b8;">（予定）</span></li>
+                                <li>ユーザー新規登録（会員機能）<span style="color:#94a3b8;">（予定）</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">技術スタック</h2>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Backend</h3>
+                                    <p class="tech-detail">PHP 8.3 / Laravel</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Frontend</h3>
+                                    <p class="tech-detail">Inertia.js + React / Vite</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Realtime</h3>
+                                    <p class="tech-detail">Laravel Reverb + Echo（WebSocket）</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">DB / UI</h3>
+                                    <p class="tech-detail">MariaDB / Chakra UI・Tailwind</p>
+                                </div>
+                            </div>
+                            <p class="content-text" style="margin-top:1.2em;">
+                                このスタック（Laravel + Inertia + React + Reverb）は、実際の案件（大手マッチングアプリ）とほぼ同じです。仕事の技術と地続きの個人開発になっています。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">こだわり・工夫</h2>
+                            <ul class="content-list">
+                                <li>「店レビュー」から「豆レビュー＋淹れ方共有」へ、プロダクトの軸を明確に定義し直した</li>
+                                <li>ニッチ（エチオピア豆）に絞ることで、何のアプリか一目で分かる差別化</li>
+                                <li>Chakra UIでフォーム・モーダル・ドロワーを高速に実装し、テーマでブランド色を共有</li>
+                                <li>リアルタイム基盤（Reverb/Echo）を学習・導入</li>
+                                <li>PRODUCT_VISION・DB設計・競合調査・収益化まで、ドキュメントで設計しながら開発</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">今後（構想・予定）</h2>
+                            <ul class="content-list">
+                                <li>店舗レビューの土台 → エチオピア豆特化へ、UI／データ構造を移行</li>
+                                <li>ユーザー新規登録（会員機能）</li>
+                                <li>各コーヒー豆ごとの掲示板的なやり取り（コメント・淹れ方共有）</li>
+                                <li>MVP公開（エチオピア豆の投稿＋評価＋味メモ）</li>
+                                <li>抽出レシピの記録・検索性の向上、交流機能の拡充</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- サイドバー -->
+                    <aside class="work-sidebar">
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">プロジェクト情報</h3>
+                            <dl class="project-details">
+                                <dt>種別</dt>
+                                <dd>個人開発（開発中）</dd>
+
+                                <dt>ジャンル</dt>
+                                <dd>コーヒー豆レビュー・抽出メモ共有</dd>
+
+                                <dt>役割</dt>
+                                <dd>構想・設計・実装すべて</dd>
+
+                                <dt>使用技術</dt>
+                                <dd>Laravel, Inertia.js, React, Reverb, MariaDB, Chakra UI</dd>
+
+                                <dt>ステータス</dt>
+                                <dd>開発中（豆特化へ移行中）</dd>
+                            </dl>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">取り組み方</h3>
+                            <p class="sidebar-text">
+                                日々のReact学習とアプリ改善をセットで継続。AIに任せたコードを自分でレビュー・判断できるようになることと、最終的なEthioPickの公開を目標にしています。
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 戻る -->
+        <section class="related-works">
+            <div class="container">
+                <div class="back-to-works" style="text-align:center;">
+                    <a href="index.html#personal" class="btn btn-primary">個人開発に戻る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <script src="js/script.js"></script>
+</body>
+</html>

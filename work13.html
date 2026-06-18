@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>書籍横断検索アプリ | 太田三一斗 Portfolio</title>
+    <meta name="description" content="Pythonで作成した書籍横断検索アプリの詳細をご紹介します。複数の図書館・書店を一括検索できるWebアプリケーション。">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNMP1BCECG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WNMP1BCECG');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="icon" href="images/icons8-calla-lily-64 (1).png" type="image/png">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="./images/headerlogo.png" alt="Mihto Oota" class="brand-logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#works" class="nav-link active">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#voice" class="nav-link">Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#personal" class="nav-link">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+            <div class="header-contact-actions" aria-label="連絡先">
+                <button type="button" class="header-contact-icon header-chatwork copy-target" data-copy="1oneyidsbboz0" aria-label="Chatwork IDをコピー">
+                    <img src="images/chatwork-header-icon.png" alt="" class="chatwork-logo-img">
+                    <span class="copy-hint">Copied!</span>
+                </button>
+                <a href="mailto:claudemonet0505@gmail.com" class="header-contact-icon" aria-label="メールで連絡">
+                    <img src="images/gmail.svg" alt="" class="mail-icon-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- メインコンテンツ -->
+    <main class="work-detail">
+        <!-- プロジェクトヘッダー -->
+        <section class="work-hero">
+            <div class="container">
+                <div class="work-hero-content">
+                    <h1 class="work-title">書籍横断検索アプリ</h1>
+                    <p class="work-subtitle">複数の図書館・書店を一括検索できるWebアプリケーション。Pythonで実装し、Streamlit Cloudにデプロイ</p>
+                    <div class="work-meta">
+                        <div class="work-tags">
+                            <span class="tag">個人開発</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">API</span>
+                            <span class="tag">Streamlit</span>
+                        </div>
+                        <div class="work-url">
+                            <a href="https://book-search-app-guj3f88x5vwjbjzw2y6tn8.streamlit.app/" class="btn-rich" target="_blank" rel="noopener">
+                                アプリを試す
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト画像 -->
+        <section class="work-image-section">
+            <div class="container">
+                <div class="work-image-grid">
+                    <div class="work-image-container">
+                        <img src="./images/IMG_2566.jpeg" alt="書籍横断検索アプリの検索画面" class="work-main-image">
+                    </div>
+                    <div class="work-image-container">
+                        <img src="./images/IMG_2567.jpeg" alt="書籍横断検索アプリの検索結果画面" class="work-main-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト詳細 -->
+        <section class="work-content">
+            <div class="container">
+                <div class="work-content-grid">
+                    <!-- メインコンテンツ -->
+                    <div class="work-main-content">
+                        <div class="content-section">
+                            <h2 class="content-title">📚 プロジェクト概要</h2>
+                            <p class="content-text">
+                                岐阜市立図書館・可児市立図書館・岐阜駅本屋・草叢BOOKSの<strong>4つの施設を一括検索</strong>できるWebアプリケーションです。
+                                一度の検索で、4つの場所の在庫状況を同時に確認できます。
+                            </p>
+                            <p class="content-text">
+                                また、Amazonの検索結果ページへのリンクも生成され、購入の際の参考にできます。
+                                さらに、Google Books APIを利用して、検索した書籍の概要（説明文）を自動で表示する機能も実装しています。
+                            </p>
+                            <p class="content-text">
+                                新しい画面では、メディコスと可児市立図書館（ミライブ）のマイページ導線を上部に配置。
+                                検索だけでなく、ログイン後の貸出状況確認や利用者ページへの移動もしやすくし、日常的に使いやすい構成へ改善しました。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">🎯 開発の目的</h2>
+                            <p class="content-text">
+                                書籍を探す際、複数の図書館や書店のWebサイトを個別に検索するのは非効率です。
+                                このアプリでは、<strong>1回の検索で4つの施設の在庫状況を同時に確認</strong>できるため、時間を大幅に節約できます。
+                            </p>
+                            <ul class="content-list">
+                                <li>複数サイトを行き来する手間を削減</li>
+                                <li>在庫状況を一目で比較</li>
+                                <li>各サイトの検索結果ページへ直接アクセス可能</li>
+                                <li>メディコス・可児市立図書館（ミライブ）のマイページへ移動しやすい導線を追加</li>
+                                <li>書籍の概要を自動表示（Google Books API）</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">🛠️ 使用技術</h2>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <div class="tech-category">Python 3.9+</div>
+                                    <div class="tech-detail">メイン言語</div>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-category">Streamlit</div>
+                                    <div class="tech-detail">WebアプリのUI作成</div>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-category">requests</div>
+                                    <div class="tech-detail">HTTPリクエスト</div>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-category">BeautifulSoup4</div>
+                                    <div class="tech-detail">HTMLの解析</div>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-category">Google Books API</div>
+                                    <div class="tech-detail">書籍情報取得</div>
+                                </div>
+                                <div class="tech-item">
+                                    <div class="tech-category">Streamlit Cloud</div>
+                                    <div class="tech-detail">デプロイ環境</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">💡 主な機能</h2>
+                            <ul class="content-list">
+                                <li><strong>一括検索:</strong> 4つの施設（岐阜市立図書館、可児市立図書館、岐阜駅本屋、草叢BOOKS）を同時検索</li>
+                                <li><strong>在庫状況表示:</strong> 各施設の在庫状況を「✅ あり」「❌ なし」「⚠️ 貸出中」で表示</li>
+                                <li><strong>検索結果リンク:</strong> 各サイトの検索結果ページへ直接アクセス可能（別タブで開く）</li>
+                                <li><strong>マイページ導線:</strong> メディコス・可児市立図書館（ミライブ）のマイページボタンを上部に配置し、ログイン後の確認動線を改善</li>
+                                <li><strong>Amazon連携:</strong> Amazonの検索結果ページへのリンクを自動生成</li>
+                                <li><strong>検索履歴機能:</strong> 過去5件の検索履歴を保存し、ボタンで再検索可能</li>
+                                <li><strong>書籍概要表示:</strong> Google Books APIから取得した説明文を自動表示</li>
+                                <li><strong>レスポンシブデザイン:</strong> PC・スマートフォンの両方に対応</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">🔧 技術的な実装ポイント</h2>
+                            <h3 style="font-size: 1.1rem; font-weight: 600; color: #2D3748; margin-top: 1.5rem; margin-bottom: 0.75rem;">1. Webスクレイピング</h3>
+                            <ul class="content-list">
+                                <li><strong>User-Agent設定:</strong> サーバーからブロックされないよう、ブラウザを模倣</li>
+                                <li><strong>セッション管理:</strong> requests.Session()でCookieを保持し、ログインが必要なサイトにも対応</li>
+                                <li><strong>HTMLパース:</strong> BeautifulSoup4で検索結果ページを解析し、在庫状況を判定</li>
+                            </ul>
+
+                            <h3 style="font-size: 1.1rem; font-weight: 600; color: #2D3748; margin-top: 1.5rem; margin-bottom: 0.75rem;">2. サイトごとの違いへの対応</h3>
+                            <ul class="content-list">
+                                <li><strong>岐阜市立図書館:</strong> セッション初期化が必須（top.doでCookie取得）</li>
+                                <li><strong>可児市立図書館:</strong> OPWSRCH1.CSPにアクセスしてセッション開始</li>
+                                <li><strong>岐阜駅本屋:</strong> GETリクエストで直接アクセス可能</li>
+                                <li><strong>草叢BOOKS:</strong> 2段階（検索→在庫ページ生成）で処理</li>
+                                <li><strong>利用者導線:</strong> ログインやマイページ確認に迷わないよう、頻繁に使う導線を検索画面上部に集約</li>
+                            </ul>
+
+                            <h3 style="font-size: 1.1rem; font-weight: 600; color: #2D3748; margin-top: 1.5rem; margin-bottom: 0.75rem;">3. エラーハンドリング</h3>
+                            <ul class="content-list">
+                                <li>try-exceptでネットワークエラーをキャッチ</li>
+                                <li>タイムアウト設定（timeout=10秒）</li>
+                                <li>エラー時は「⚠️ エラー」と表示し、アプリを継続</li>
+                            </ul>
+
+                            <h3 style="font-size: 1.1rem; font-weight: 600; color: #2D3748; margin-top: 1.5rem; margin-bottom: 0.75rem;">4. Google Books API連携</h3>
+                            <ul class="content-list">
+                                <li>検索キーワードでGoogle Books APIをリクエスト</li>
+                                <li>取得した説明文を3行程度で表示</li>
+                                <li>該当する書籍が見つからない場合は非表示</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">📈 開発で学んだこと</h2>
+                            <ul class="content-list">
+                                <li><strong>Pythonによるスクレイピング技術:</strong> requests, BeautifulSoup4を使ったWebページ解析</li>
+                                <li><strong>Streamlitの活用:</strong> PythonだけでWebアプリを構築する方法</li>
+                                <li><strong>セッション管理:</strong> Cookieを使った認証・セッション維持</li>
+                                <li><strong>API連携:</strong> Google Books APIを使った外部サービス連携</li>
+                                <li><strong>エラーハンドリング:</strong> 実運用を想定した堅牢なエラー処理</li>
+                                <li><strong>Streamlit Cloudへのデプロイ:</strong> クラウド環境での公開方法</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">⚠️ 注意事項</h2>
+                            <p class="content-text">
+                                本プロジェクトは学習・個人利用目的で作成しています。
+                                各サイトの利用規約を遵守し、短時間の連続アクセスは避けてください。
+                                また、サイトのHTML構造が変更された場合、正常に動作しない可能性があります。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- サイドバー -->
+                    <aside class="work-sidebar">
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">プロジェクト情報</h3>
+                            <dl class="project-details">
+                                <dt>担当範囲</dt>
+                                <dd>企画・設計・実装・デプロイ</dd>
+                                
+                                <dt>制作期間</dt>
+                                <dd>約2週間</dd>
+                                
+                                <dt>使用言語</dt>
+                                <dd>Python 3.9+</dd>
+                                
+                                <dt>主要ライブラリ</dt>
+                                <dd>Streamlit, requests, BeautifulSoup4</dd>
+                                
+                                <dt>デプロイ環境</dt>
+                                <dd>Streamlit Cloud</dd>
+                            </dl>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">関連リンク</h3>
+                            <div class="related-links">
+                                <a href="https://book-search-app-guj3f88x5vwjbjzw2y6tn8.streamlit.app/" class="related-link" target="_blank" rel="noopener">
+                                    📱 アプリを試す
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">技術スタック</h3>
+                            <p class="sidebar-text">
+                                <strong>言語:</strong> Python<br>
+                                <strong>フレームワーク:</strong> Streamlit<br>
+                                <strong>ライブラリ:</strong> requests, BeautifulSoup4<br>
+                                <strong>API:</strong> Google Books API<br>
+                                <strong>デプロイ:</strong> Streamlit Cloud
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 他の作品（JavaScriptで自動生成） -->
+        <section class="related-works">
+            <div class="container">
+                <h2 class="section-title">Other Works</h2>
+                <div class="slider-container">
+                    <div class="related-works-grid">
+                        <!-- JavaScriptで自動生成されます -->
+                    </div>
+                </div>
+                <div class="back-to-works">
+                    <a href="index.html#works" class="btn btn-primary">全ての作品を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>

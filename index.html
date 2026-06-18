@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R9RMJB5QCV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // 自分のアクセスを internal に設定
+  gtag('set', 'user_properties', {
+    traffic_type: 'internal'
+  });
+
+  gtag('config', 'G-R9RMJB5QCV');
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihito Oota　Portfolio</title>
+    <meta name="description" content="太田三一斗のポートフォリオサイト。Web開発、WordPress、AI活用の実績をご紹介します。">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/icons8-calla-lily-64 (1).png" type="image/png">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header is-transparent">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="#home" class="brand-link">
+                    <img src="./images/headerlogo.png" alt="Mihto Oota" class="brand-logo">
+                </a>
+            </div>
+            <div class="nav-overlay"></div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#works" class="nav-link active">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#voice" class="nav-link">Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#personal" class="nav-link">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+            <div class="header-contact-actions" aria-label="連絡先">
+                <button type="button" class="header-contact-icon header-chatwork copy-target" data-copy="1oneyidsbboz0" aria-label="Chatwork IDをコピー">
+                    <img src="images/chatwork-header-icon.png" alt="" class="chatwork-logo-img">
+                    <span class="copy-hint">Copied!</span>
+                </button>
+                <a href="mailto:claudemonet0505@gmail.com" class="header-contact-icon" aria-label="メールで連絡">
+                    <img src="images/gmail.svg" alt="" class="mail-icon-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- HEROセクション - パララックス効果 -->
+    <section id="home" class="parallax-hero-section">
+        <div class="parallax-background">
+            <img src="./images/HERObg2.jpg" alt="Background Flowers" class="bg-image" id="bgImage">
+            <div class="bg-overlay" id="bgOverlay"></div>
+        </div>
+        
+        <div class="parallax-container">
+            <div class="parallax-content">
+                <!-- メディアコンテナ -->
+                <div class="media-container" id="mediaContainer">
+                    <video 
+                        src="./images/7814679-uhd_2160_3840_30fps.mp4" 
+                        autoplay 
+                        muted 
+                        loop 
+                        playsinline 
+                        class="hero-video"
+                        id="heroVideo"
+                    ></video>
+                    <div class="media-overlay" id="mediaOverlay"></div>
+                </div>
+                
+                <!-- タイトルテキスト -->
+                <div class="title-container">
+                    <h1 class="parallax-title-left" id="titleLeft">Mihito Oota</h1>
+                    <h1 class="parallax-title-right" id="titleRight">Portfolio</h1>
+                </div>
+                
+                <!-- サブテキスト -->
+                <div class="subtitle-container">
+                    <p class="parallax-subtitle-left" id="subtitleLeft">Scroll</p>
+                    <p class="parallax-subtitle-right" id="subtitleRight">to Expand</p>
+                </div>
+            </div>
+            
+            <!-- コンテンツセクション -->
+            <div class="content-section" id="contentSection">
+                <div class="content-inner">
+                    <!-- 1. 見出しと導入テキスト -->
+                    <h2 class="content-title parallax-fade-down" style="text-align: center; white-space: normal;">Freelance Engineer</h2>
+                    <p class="content-text hero-lead parallax-fade-down">
+                        アプリ開発、Web制作、花のカタログ制作を中心に活動しています。
+                    </p>
+                    
+                    <!-- 2. 画像と詳細テキスト -->
+                    <div class="hero-content" style="margin-top: 4rem;">
+                        <!-- 左：画像エリア -->
+                        <div class="hero-image-area parallax-slide-left">
+                            <div class="image-decoration"></div>
+                            <div class="hero-img-wrapper">
+                                <img src="./images/LINE_ALBUM_Instagram_260515_1.jpeg" alt="カフェでパソコン作業をするフリーランスエンジニア" class="hero-img">
+                            </div>
+                            <div class="hero-proof-strip" aria-label="実績サマリー">
+                                <div class="hero-proof-item">
+                                    <span>フリーランス</span>
+                                    <strong>業務委託・月額契約</strong>
+                                    <small>複数社と継続契約</small>
+                                </div>
+                                <div class="hero-proof-item">
+                                    <span>経営者</span>
+                                    <strong>事業売却</strong>
+                                    <small>純利益率7%→21%</small>
+                                </div>
+                                <div class="hero-proof-item">
+                                    <span>店長</span>
+                                    <strong>1,500店中1位</strong>
+                                    <small>キャンペーン成績表彰</small>
+                                </div>
+                                <div class="hero-proof-item">
+                                    <span>EC運用</span>
+                                    <strong>1年で500件</strong>
+                                    <small>個人物販・楽天RMS</small>
+                                </div>
+                            </div>
+                            <div class="hero-news" aria-label="最新のお知らせ">
+                                <div class="hero-news-label">講演会決定</div>
+                                <div class="hero-news-marquee">
+                                    <div class="hero-news-track">
+                                        <span>岐阜市の若者サポートステーションにて「夢のかなえ方」をテーマに講演させていただきます。</span>
+                                        <span>岐阜市の若者サポートステーションにて「夢のかなえ方」をテーマに講演させていただきます。</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORKSセクション -->
+    <section id="works" class="works-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="marquee-bg">
+                    <div class="marquee-text">
+                        <span>WORKS</span><span>WORKS</span><span>WORKS</span><span>WORKS</span>
+                        <span>WORKS</span><span>WORKS</span><span>WORKS</span><span>WORKS</span>
+                    </div>
+                </div>
+                <h2 class="section-title">Works</h2>
+                <p class="section-subtitle">
+                    これまでに手がけたプロジェクト
+                </p>
+            </div>
+            
+            <div class="works-grid">
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/chat-app-nda.jpg" alt="会員制マッチングアプリのチャット機能開発" loading="lazy">
+                                        <div class="work-overlay">
+                                            <a href="./work14.html" class="work-link">詳細を見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">大手マッチングアプリ<br>リニューアル</h3>
+                                        <p class="work-description">テレビ・雑誌で紹介されたアプリ<br>中核のチャット機能を実装</p>
+                                        <div class="work-tags">
+                                            <span class="tag">Laravel</span>
+                                            <span class="tag">React</span>
+                                            <span class="tag">WebSocket</span>
+                                            <span class="tag">DB設計</span>
+                                            <span class="tag">NDA</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work14.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/medipatop.jpg" alt="メディパ（美容医療）公式サイト制作" loading="lazy" style="object-position: center top;">
+                                        <div class="work-overlay">
+                                            <a href="./work11.html" class="work-link">詳細を見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">メディパ様（美容医療）<br>LINE誘導のサイト実装</h3>
+                                        <p class="work-description">Googleのビジネスコンテストで優勝した<br>医学生チームのサービス</p>
+                                        <div class="work-tags">
+                                            <span class="tag">WordPress</span>
+                                            <span class="tag">設計</span>
+                                            <span class="tag">ACF</span>
+                                            <span class="tag">PHP</span>
+                                            <span class="tag">LINE誘導動線</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work11.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/catalog-automation-hero.jpg" alt="カタログ制作 業務効率化ツール" loading="lazy">
+                                        <div class="work-overlay">
+                                            <a href="./work16.html" class="work-link">詳細を見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">カタログ制作<br>業務効率化ツール</h3>
+                                        <p class="work-description">AI画像認識×Pythonで<br>カタログとExcelの確認を自動化</p>
+                                        <div class="work-tags">
+                                            <span class="tag">Python</span>
+                                            <span class="tag">AI画像認識</span>
+                                            <span class="tag">Excel自動化</span>
+                                            <span class="tag">業務効率化</span>
+                                            <span class="tag">NDA</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work16.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/heartbrain-executive-compass.jpg" alt="HEART&BRAIN様 Executive Compass LP制作" loading="lazy" style="object-position: center top;">
+                                        <div class="work-overlay">
+                                            <a href="https://heartandbrain.co.jp/service/executive-compass/" class="work-link" target="_blank" rel="noopener">サイトを見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">HEART&BRAIN様<br>LP制作・既存サイト改修</h3>
+                                        <p class="work-description">上場企業の役員が見る信頼感のあるLP制作</p>
+                                        <div class="work-tags">
+                                            <span class="tag">WordPress</span>
+                                            <span class="tag">LP制作</span>
+                                            <span class="tag">AquaVoice</span>
+                                            <span class="tag">既存サイト改修</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work3.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/kushikatsu-sajiro.jpg" alt="串かつ さじろう様 ホームページリニューアル" loading="lazy" style="object-position: center top;">
+                                        <div class="work-overlay">
+                                            <a href="https://kushikatsu.sajiro.fun/" class="work-link" target="_blank" rel="noopener">サイトを見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">串かつ さじろう様<br>リニューアル</h3>
+                                        <p class="work-description">関東に２店舗ある飲食店<br>WPで6ページを5日間で実装</p>
+                                        <div class="work-tags">
+                                            <span class="tag">WordPress</span>
+                                            <span class="tag">フルスタック</span>
+                                            <span class="tag">オリジナルテーマ</span>
+                                            <span class="tag">インスタ・電話導線</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work9.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/lp-note-hero.jpg" alt="LP制作 1ヶ月8本ペース・フルスタック実装" loading="lazy" style="object-position: center top;">
+                                        <div class="work-overlay">
+                                            <a href="./work15.html" class="work-link">詳細を見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">LP1ヶ月8本<br>音声入力で効率化</h3>
+                                        <p class="work-description">デザインからWordPress<br>新規登録・ログイン・DB・決済導線</p>
+                                        <div class="work-tags">
+                                            <span class="tag">AquaVoice</span>
+                                            <span class="tag">AI活用</span>
+                                            <span class="tag">バックエンド</span>
+                                            <span class="tag">決済導線</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work15.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/IMG_2566.jpeg" alt="書籍横断検索アプリの検索画面" loading="lazy">
+                                        <div class="work-overlay">
+                                            <a href="https://book-search-app-guj3f88x5vwjbjzw2y6tn8.streamlit.app/" class="work-link" target="_blank" rel="noopener">アプリを試す</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">書籍在庫検索アプリ<br>個人開発</h3>
+                                        <p class="work-description">図書館とブックカフェの在庫を一括で検索</p>
+                                        <div class="work-tags">
+                                            <span class="tag">個人開発</span>
+                                            <span class="tag">Python</span>
+                                            <span class="tag">API</span>
+                                            <span class="tag">Streamlit</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work13.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/vein-energy.jpg" alt="VEIN ENERGY様 コーポレートサイト制作" loading="lazy" style="object-position: center top;">
+                                        <div class="work-overlay">
+                                            <a href="https://vein-energy-all.com/" class="work-link" target="_blank" rel="noopener">サイトを見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">VEIN ENERGY様<br>コーポレート</h3>
+                                        <p class="work-description">ロゴ制作から実装まで2日で納品</p>
+                                        <div class="work-tags">
+                                            <span class="tag">STUDIO</span>
+                                            <span class="tag">ロゴ制作</span>
+                                            <span class="tag">エネルギー系</span>
+                                            <span class="tag">コーポレート</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work10.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+
+                <article class="work-card">
+                                    <div class="work-image">
+                                        <img src="./images/goryo-top.jpg" alt="五料産業株式会社様 コーポレートサイト制作" loading="lazy">
+                                        <div class="work-overlay">
+                                            <a href="https://goryo-demo.pages.dev/" class="work-link" target="_blank" rel="noopener">サイトを見る</a>
+                                        </div>
+                                    </div>
+                                    <div class="work-content">
+                                        <h3 class="work-title">五料産業株式会社様<br>リニューアル</h3>
+                                        <p class="work-description">ヒアリングからデザイン・実装まで</p>
+                                        <div class="work-tags">
+                                            <span class="tag">ヒアリング</span>
+                                            <span class="tag">デザイン</span>
+                                            <span class="tag">Figma</span>
+                                            <span class="tag">コーポレート</span>
+                                            <span class="tag">フルスタック</span>
+                                        </div>
+                                    </div>
+                                    <a href="./work12.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                                </article>
+
+            
+
+            
+
+            </div>
+        </div>
+    </section>
+
+    <!-- VOICEセクション -->
+    <section id="voice" class="voice-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="marquee-bg">
+                    <div class="marquee-text">
+                        <span>VOICE</span><span>VOICE</span><span>VOICE</span><span>VOICE</span>
+                        <span>VOICE</span><span>VOICE</span><span>VOICE</span><span>VOICE</span>
+                    </div>
+                </div>
+                <h2 class="section-title">Voice</h2>
+                <p class="section-subtitle">
+                    「一緒に仕事をすると楽しい」と言われます。
+                </p>
+            </div>
+
+            <div class="voice-showcase" aria-label="お客様の声">
+                <div class="voice-featured">
+                    <figure class="voice-featured-card voice-frame"><img src="./voice/normalized/V1.png" alt="お客様の声（高評価レビュー）" loading="lazy"></figure>
+                </div>
+                <div class="voice-flow" aria-label="その他のお客様の声">
+                    <div class="voice-flow-row">
+                        <div class="voice-flow-track voice-flow-track-left">
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V3.png" alt="お客様の声 3" loading="lazy"></figure>
+                            <figure class="voice-mini-card voice-mini-card-featured"><img src="./voice/normalized/V7.png" alt="お客様の声 7" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V4.png" alt="お客様の声 4" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V5.png" alt="お客様の声 5" loading="lazy"></figure>
+                            <figure class="voice-mini-card voice-mini-card-featured"><img src="./voice/normalized/V7.png" alt="お客様の声 7" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V6.png" alt="お客様の声 6" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V3.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                            <figure class="voice-mini-card voice-mini-card-featured"><img src="./voice/normalized/V7.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V4.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V5.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                            <figure class="voice-mini-card voice-mini-card-featured"><img src="./voice/normalized/V7.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                            <figure class="voice-mini-card"><img src="./voice/normalized/V6.png" alt="" aria-hidden="true" loading="lazy"></figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONALセクション（個人開発） -->
+    <section id="personal" class="works-section personal-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="marquee-bg">
+                    <div class="marquee-text">
+                        <span>PERSONAL</span><span>PERSONAL</span><span>PERSONAL</span><span>PERSONAL</span>
+                        <span>PERSONAL</span><span>PERSONAL</span><span>PERSONAL</span><span>PERSONAL</span>
+                    </div>
+                </div>
+                <h2 class="section-title">Personal</h2>
+                <p class="section-subtitle">
+                    学習と実験を兼ねて、自分のために作り続けているプロダクト
+                </p>
+            </div>
+
+            <div class="works-grid personal-grid">
+                <article class="work-card personal-card">
+                    <span class="status-badge status-done">実装済み</span>
+                    <div class="work-image">
+                        <img src="./images/work-home-dashboard.png" alt="Work Home Dashboard 通知管理ダッシュボード" loading="lazy">
+                        <div class="work-overlay">
+                            <a href="./personal1.html" class="work-link">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Work Notification Hub</h3>
+                        <p class="work-description">Gmail・Chatwork・GitHub・Slackの通知を1画面に集約。Notionカレンダーとフォトライブラリーを並べた、自分専用の仕事ホーム画面。</p>
+                        <div class="work-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">各種API</span>
+                            <span class="tag">AppleScript</span>
+                            <span class="tag">ローカル実行</span>
+                        </div>
+                    </div>
+                    <a href="./personal1.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                </article>
+
+                <article class="work-card personal-card">
+                    <span class="status-badge status-wip">開発中</span>
+                    <div class="work-image">
+                        <img src="./images/ethiopick-home.png" alt="EthioPick コーヒー豆評価アプリ" loading="lazy">
+                        <div class="work-overlay">
+                            <a href="./personal2.html" class="work-link">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">EthioPick</h3>
+                        <p class="work-description">エチオピア産コーヒー豆に特化した、レビュー・抽出メモ共有アプリ。「この豆をどう淹れたら一番おいしいか」を共有する個人プロダクト。</p>
+                        <div class="work-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">Inertia</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Reverb</span>
+                            <span class="tag">MariaDB</span>
+                        </div>
+                    </div>
+                    <a href="./personal2.html" class="work-detail-link"><span>詳細を見る</span><span>→</span></a>
+                </article>
+            </div>
+
+            <div class="personal-vision">
+                <div class="personal-vision-head">
+                    <div class="personal-vision-kicker">
+                        <span class="personal-vision-status">Next Product</span>
+                        <span class="personal-vision-dot"></span>
+                        <span class="personal-vision-state">構想中</span>
+                    </div>
+                    <p class="personal-vision-text">犬の散歩アプリと個体認証ID構想</p>
+                    <p class="personal-vision-sub">位置情報共有から始め、民間連携、行政連携へ広げていく長期構想。</p>
+                </div>
+                <ol class="personal-roadmap" aria-label="犬アプリ構想のフェーズ">
+                    <li class="personal-roadmap-item">
+                        <span class="personal-roadmap-num">01</span>
+                        <strong>位置情報・お散歩アプリ</strong>
+                        <p>散歩位置共有、散歩記録、迷子時の初動支援。</p>
+                    </li>
+                    <li class="personal-roadmap-item">
+                        <span class="personal-roadmap-num">02</span>
+                        <strong>民間連携</strong>
+                        <p>位置情報データ、首輪デバイス、病院・企業・広告との連携。</p>
+                    </li>
+                    <li class="personal-roadmap-item">
+                        <span class="personal-roadmap-num">03</span>
+                        <strong>犬ID・行政連携</strong>
+                        <p>個体認証、登録管理、ドッグランや地域サービスまで拡張。</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAREERセクション -->
+    <section id="career" class="career-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="marquee-bg">
+                    <div class="marquee-text">
+                        <span>CAREER</span><span>CAREER</span><span>CAREER</span><span>CAREER</span>
+                        <span>CAREER</span><span>CAREER</span><span>CAREER</span><span>CAREER</span>
+                    </div>
+                </div>
+                <h2 class="section-title">Career</h2>
+                <p class="section-subtitle">
+                    職務経歴と、現在の活動領域です
+                </p>
+            </div>
+            <div class="timeline-section">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2025年5月〜現在</div>
+                        <div class="timeline-content">
+                            <h5>フリーランスエンジニア（開業）</h5>
+                            <p>設計から公開・運用まで一貫対応。業務委託・顧問契約を含む継続案件を担当しています。<br>これまでに手がけた主な領域は次のとおりです。</p>
+                            <ul class="career-bullets">
+                                <li>大手マッチングアプリのリアルタイムチャット開発（Laravel / React / WebSocket / DB設計）</li>
+                                <li>医療系サービスのWordPress構築・LINE誘導動線（ACF / PHP）</li>
+                                <li>上場企業向けビジネスLP・既存サイトの改修</li>
+                                <li>ビジネス系LP量産（1ヶ月8本）</li>
+                                <li>飲食店・エネルギー系・コーポレートサイトの制作（フルスタック）</li>
+                                <li>花のカタログ制作のディレクション／ PythonでExcel照合を自動化</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024年3月〜2025年3月</div>
+                        <div class="timeline-content">
+                            <h5>ぎふ就労支援センター</h5>
+                            <p>行政の「ワークダイバーシティ支援制度」を利用し、介護と仕事を両立。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2018年4月〜2022年10月</div>
+                        <div class="timeline-content">
+                            <h5>B-Rサーティワンアイスクリーム株式会社　FC（経営者）</h5>
+                            <p>店舗運営（オーナー業務、店舗経営、給与計算、外販交渉、職場体験、学校への講義、店長業務、採用、シフト管理）<br>2022年10月、大手イオンの系列へ事業売却。</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2014年4月〜2017年10月</div>
+                        <div class="timeline-content">
+                            <h5>有限会社フラワーマウンテン（会社員）</h5>
+                            <p>古物の買取・値付け・販売、接客、ECサイト出品管理など幅広く担当。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICINGセクション -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="marquee-bg">
+                    <div class="marquee-text">
+                        <span>PRICING</span><span>PRICING</span><span>PRICING</span><span>PRICING</span>
+                        <span>PRICING</span><span>PRICING</span><span>PRICING</span><span>PRICING</span>
+                    </div>
+                </div>
+                <h2 class="section-title">Pricing</h2>
+                <p class="section-subtitle">
+                    制作・開発料金の目安です
+                </p>
+                <p class="pricing-note">
+                    ※税別。制作費は着手時に50%を前金としていただいています。内容・規模によりお見積もりいたします。
+                </p>
+            </div>
+            
+            <div class="pricing-groups">
+                <div class="pricing-group">
+                    <h3 class="pricing-group-title">Web制作</h3>
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">LP / 簡易サイト</h4>
+                                <p class="pricing-desc">1ページ構成のランディングページ、簡易的なサービスサイト</p>
+                            </div>
+                            <p class="pricing-cost">100,000円〜</p>
+                        </div>
+                        
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">WordPress制作</h4>
+                                <p class="pricing-desc">お知らせ更新、ブログ投稿、固定ページ管理などを含むWebサイト制作</p>
+                            </div>
+                            <p class="pricing-cost">150,000円〜</p>
+                        </div>
+
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">ノーコード制作</h4>
+                                <p class="pricing-desc">STUDIO / Wixなどを使ったスピード重視のサイト制作</p>
+                            </div>
+                            <p class="pricing-cost">80,000円〜</p>
+                        </div>
+                        
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">保守管理</h4>
+                                <p class="pricing-desc">定期更新、軽微な修正、運用相談、バックアップ確認など</p>
+                            </div>
+                            <p class="pricing-cost">月30,000円〜</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-group pricing-group-featured">
+                    
+                    <h3 class="pricing-group-title">Webアプリ開発</h3>
+                    <div class="pricing-table">
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">Webアプリ開発 / 既存システム改修</h4>
+                                <p class="pricing-desc">React / Laravel / DB連携 / API連携 / 管理画面 / 会員機能など</p>
+                            </div>
+                            <p class="pricing-cost">時間単価 5,000円〜</p>
+                        </div>
+                        
+                        <div class="pricing-item">
+                            <div>
+                                <h4 class="pricing-service">月額・準委任での開発支援</h4>
+                                <p class="pricing-desc">週2日〜。エージェント経由、継続開発、機能追加の相談も可能です</p>
+                            </div>
+                            <p class="pricing-cost">応相談</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="site-bottom-note">&copy; 2026 Mihto Oota. All rights reserved.</p>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

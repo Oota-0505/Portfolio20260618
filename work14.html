@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大手マッチングアプリ開発案件 | 太田三一斗 Portfolio</title>
+    <meta name="description" content="会員制マッチングアプリのリニューアルにおけるリアルタイムチャット機能開発の実績です。Laravel、React、Tailwind CSS、WebSocketを用いて実装。">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNMP1BCECG"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WNMP1BCECG');
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/work.css">
+    <link rel="icon" href="images/icons8-calla-lily-64 (1).png" type="image/png">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">
+                    <img src="./images/headerlogo.png" alt="Mihto Oota" class="brand-logo">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html#works" class="nav-link active">Works</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#voice" class="nav-link">Voice</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#personal" class="nav-link">Personal</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#career" class="nav-link">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
+                </li>
+            </ul>
+            <div class="header-contact-actions" aria-label="連絡先">
+                <button type="button" class="header-contact-icon header-chatwork copy-target" data-copy="1oneyidsbboz0" aria-label="Chatwork IDをコピー">
+                    <img src="images/chatwork-header-icon.png" alt="" class="chatwork-logo-img">
+                    <span class="copy-hint">Copied!</span>
+                </button>
+                <a href="mailto:claudemonet0505@gmail.com" class="header-contact-icon" aria-label="メールで連絡">
+                    <img src="images/gmail.svg" alt="" class="mail-icon-img">
+                </a>
+            </div>
+            <button class="nav-toggle" aria-label="メニューを開く">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+    </header>
+
+
+    <!-- メインコンテンツ -->
+    <main class="work-detail">
+        <!-- プロジェクトヘッダー -->
+        <section class="work-hero">
+            <div class="container">
+                <div class="work-hero-content">
+                    <h1 class="work-title">大手マッチングアプリ開発案件</h1>
+                    <p class="work-subtitle">Laravel × React（Inertia）× Tailwind CSS × WebSocket（Reverb）によるリアルタイムチャット機能開発</p>
+                    <div class="work-meta">
+                        <div class="work-tags">
+                            <span class="tag">Laravel</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Tailwind CSS</span>
+                            <span class="tag">WebSocket</span>
+                            <span class="tag">Reverb</span>
+                            <span class="tag">DB設計</span>
+                            <span class="tag">チーム開発</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト画像 -->
+        <section class="work-image-section">
+            <div class="container">
+                <div class="work-image-container">
+                    <img src="./images/chat-app-nda.jpg" alt="会員制マッチングアプリの匿名チャットUIイメージ" class="work-main-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- プロジェクト詳細 -->
+        <section class="work-content">
+            <div class="container">
+                <div class="work-content-grid">
+                    <!-- メインコンテンツ -->
+                    <div class="work-main-content">
+                        <div class="content-section">
+                            <h2 class="content-title">概要</h2>
+                            <p class="content-text">
+                                会員制マッチングアプリのリニューアルプロジェクトにおいて、サービスの中核となるリアルタイムチャット機能を担当しました。
+                                データベース設計の一部、バックエンド、フロントエンド、WebSocketによるリアルタイム配信まで一貫して実装しています。
+                            </p>
+                            <p class="content-text">
+                                NDAのためクライアント名・サービス名・実画面は非公開です。
+                                掲載画像は、機能の方向性を伝えるために作成した匿名UIイメージです。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">課題・目的</h2>
+                            <p class="content-text">
+                                リニューアルに伴い、即時性・データ保全・保守性を満たすチャット基盤を新たに構築する必要がありました。
+                                複数エンジニアによるGitHub PRベースのチーム開発の中で、機能追加のスピードとコードの整合性を両立することが課題でした。
+                            </p>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">担当範囲</h2>
+                            <ul class="content-list">
+                                <li>チャット／トークルーム機能のデータベース設計の一部に関与</li>
+                                <li>Laravelによるバックエンド実装</li>
+                                <li>React（Inertia）によるフロントエンド実装</li>
+                                <li>Laravel Reverb / Echoを用いたWebSocket配信</li>
+                                <li>機能単位のテスト、PR作成、レビュー指摘対応</li>
+                                <li>ブランチ更新時のコンフリクト解消、マイグレーション反映順の周知</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">実装した主な機能</h2>
+                            <ul class="content-list">
+                                <li><strong>リアルタイムメッセージ送受信:</strong> 送信したメッセージを即時に相手画面へ反映</li>
+                                <li><strong>画像添付:</strong> 複数画像の送信・保存・表示に対応</li>
+                                <li><strong>リプライ:</strong> 任意のメッセージを引用して返信。リアルタイム受信時も引用表示に対応</li>
+                                <li><strong>長押しメニュー:</strong> コピー、部分コピー、リプライ、送信取消、アナウンス操作を実装</li>
+                                <li><strong>ロール別表示:</strong> 会員・運営などの権限に応じて操作メニューを出し分け</li>
+                                <li><strong>アナウンス同期:</strong> ピン留めしたメッセージを全員へリアルタイム反映</li>
+                                <li><strong>未読管理:</strong> リアルタイム未読バッジ更新と既読管理に対応</li>
+                                <li><strong>誤既読防止:</strong> Page Visibility APIを使い、タブが表示されている時のみ既読化</li>
+                                <li><strong>トークルーム一覧更新:</strong> 新着メッセージで該当ルームを最上部へ移動し、プレビューを更新</li>
+                                <li><strong>メッセージ検索:</strong> トークルーム内のキーワード検索に対応</li>
+                                <li><strong>論理削除:</strong> メッセージ・添付画像を物理削除せず、復元可能な状態で保持</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">技術仕様</h2>
+                            <div class="tech-grid">
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Frontend</h3>
+                                    <p class="tech-detail">React 18, Inertia.js, Tailwind CSS, Vite</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Backend</h3>
+                                    <p class="tech-detail">Laravel 12, PHP, MySQL 8</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Realtime</h3>
+                                    <p class="tech-detail">Laravel Reverb, Laravel Echo, WebSocket</p>
+                                </div>
+                                <div class="tech-item">
+                                    <h3 class="tech-category">Development</h3>
+                                    <p class="tech-detail">Laravel Sail, Docker, GitHub PR Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">技術的な工夫</h2>
+                            <ul class="content-list">
+                                <li><strong>双方向リアルタイム通信:</strong> WebSocketによる送受信と、ブロードキャスト宛先制御を実装</li>
+                                <li><strong>不要な自己再描画の抑制:</strong> <code>toOthers()</code> を活用し、送信者自身への不要な再配信を抑制</li>
+                                <li><strong>データ保全:</strong> SoftDeletesによる論理削除で、誤削除時の復旧や監査性を考慮</li>
+                                <li><strong>DB整合性:</strong> nullセーフ、N+1回避、トランザクション境界を意識して実装</li>
+                                <li><strong>描画最適化:</strong> <code>useMemo</code> / <code>useLayoutEffect</code> を用いて不要な再計算や描画のちらつきを抑制</li>
+                                <li><strong>差分更新:</strong> トークルーム一覧では対象ルームのみ更新し、最小再描画で先頭へ移動</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">チーム開発での対応</h2>
+                            <ul class="content-list">
+                                <li>1機能=1PRの粒度で実装し、レビューしやすい単位に分割</li>
+                                <li>レビュー指摘は1件1コミットで対応し、変更履歴を追いやすく整理</li>
+                                <li>main更新時はレビュー中ブランチへ取り込み、コンフリクトを都度解消</li>
+                                <li>マイグレーションを伴う変更では、反映順やチームへの周知まで配慮</li>
+                            </ul>
+                        </div>
+
+                        <div class="content-section">
+                            <h2 class="content-title">成果・学び</h2>
+                            <p class="content-text">
+                                Laravel、React、WebSocketを組み合わせたリアルタイム機能を、設計から実装・レビュー対応まで一貫して担当しました。
+                                単に画面を作るだけでなく、データ保全、未読・既読の整合性、権限ごとのUI制御、チーム開発での保守性まで考慮して実装できた点が大きな経験です。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- サイドバー -->
+                    <aside class="work-sidebar">
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">プロジェクト情報</h3>
+                            <dl class="project-details">
+                                <dt>案件種別</dt>
+                                <dd>大手マッチングアプリ開発案件</dd>
+                                
+                                <dt>公開URL</dt>
+                                <dd>NDAのため非公開</dd>
+                                
+                                <dt>制作期間</dt>
+                                <dd>2026年2月〜継続中</dd>
+                                
+                                <dt>体制</dt>
+                                <dd>複数エンジニアによるチーム開発</dd>
+                                
+                                <dt>役割</dt>
+                                <dd>チャット機能の設計・実装・テスト・レビュー対応</dd>
+                                
+                                <dt>使用技術</dt>
+                                <dd>Laravel, React, Inertia.js, Tailwind CSS, MySQL, Reverb, Echo</dd>
+                            </dl>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">担当領域</h3>
+                            <p class="sidebar-text">
+                                データベース設計の一部、バックエンド、フロントエンド、リアルタイム配信、PRレビュー対応まで担当。
+                            </p>
+                        </div>
+
+                        <div class="sidebar-section">
+                            <h3 class="sidebar-title">掲載画像について</h3>
+                            <p class="sidebar-text">
+                                NDAに配慮し、実画面ではなく匿名化したチャットUIイメージを掲載しています。
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- 他の作品（JavaScriptで自動生成） -->
+        <section class="related-works">
+            <div class="container">
+                <h2 class="section-title">Other Works</h2>
+                <div class="slider-container">
+                    <div class="related-works-grid">
+                        <!-- JavaScriptで自動生成されます -->
+                    </div>
+                </div>
+                <div class="back-to-works">
+                    <a href="index.html#works" class="btn btn-primary">全ての作品を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <script src="js/script.js"></script>
+</body>
+</html>
